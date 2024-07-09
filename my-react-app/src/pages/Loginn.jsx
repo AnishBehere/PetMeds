@@ -20,7 +20,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "http://localhost:3000/api/v1/user/login",
+          "https://meddy-1-26cd.onrender.com/api/v1/user/login",
           { email, password, confirmPassword, role: "Patient" },
           {
             withCredentials: true,
@@ -49,8 +49,7 @@ const Login = () => {
       <div className="container form-component login-form">
         <h2>Sign In</h2>
         <p>Login To Continue</p>
-        <p>
-        </p>
+        <p></p>
         <form onSubmit={handleLogin}>
           <input
             type="text"
@@ -77,17 +76,11 @@ const Login = () => {
               flexDirection: "row",
             }}
           >
-
-
-
-  
             <p style={{ marginBottom: 0 }}>Not Registered?</p>
-            
-            
-         
+
             <Link
               to={"/register"}
-              //   link tag se mai navigate karra hu register pe 
+              //   link tag se mai navigate karra hu register pe
               style={{ textDecoration: "none", color: "#271776ca" }}
             >
               Register Now

@@ -1,4 +1,3 @@
-
 /* eslint-disable no-unused-vars */
 import axios from "axios";
 import React, { useEffect } from "react";
@@ -36,7 +35,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "http://localhost:3000/api/v1/user/doctors",
+        "https://meddy-1-26cd.onrender.com/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -49,7 +48,7 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const { data } = await axios.post(
-        "http://localhost:3000/api/v1/appointment/post",
+        "https://meddy-1-26cd.onrender.com/api/v1/appointment/post",
         {
           firstName,
           lastName,
@@ -176,7 +175,8 @@ const AppointmentForm = () => {
               disabled={!department}
             >
               <option value="">Select Doctor</option>
-              {doctors.filter((doctor) => doctor.doctorDepartment === department)
+              {doctors
+                .filter((doctor) => doctor.doctorDepartment === department)
                 .map((doctor, index) => (
                   <option
                     value={`${doctor.firstName} ${doctor.lastName}`}

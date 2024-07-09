@@ -20,7 +20,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "http://localhost:3000/api/v1/user/login",
+          "https://meddy-1-26cd.onrender.com/api/v1/user/login",
           { email, password, confirmPassword, role: "Admin" },
           {
             withCredentials: true,
@@ -47,7 +47,6 @@ const Login = () => {
   return (
     <>
       <section className="container form-component">
-      
         <h1 className="form-title">WELCOME TO Medbuddy</h1>
         <p>Only Admins Are Allowed To Access!</p>
         <form onSubmit={handleLogin}>

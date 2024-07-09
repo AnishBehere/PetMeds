@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext, useEffect, useState } from 'react'
-import { Context } from '../main';
-import axios from 'axios';
-import { Navigate } from 'react-router-dom';
-
+import React, { useContext, useEffect, useState } from "react";
+import { Context } from "../main";
+import axios from "axios";
+import { Navigate } from "react-router-dom";
 
 const Messages = () => {
   const [messages, setMessages] = useState([]);
@@ -12,7 +11,7 @@ const Messages = () => {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:3000/api/v1/message/getall",
+          "https://meddy-1-26cd.onrender.com/api/v1/message/getall",
           { withCredentials: true }
         );
         setMessages(data.messages);

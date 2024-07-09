@@ -1,6 +1,6 @@
 import { User } from "../models/userModels.js";
 
-import { generateToken } from "../utils/jwtToken.js";
+import { generateToken } from "../utils/JwtToken.js";
 import ErrorHandler from "../middlewares/errorMiddleware.js";
 import { catchAsyncError } from "../middlewares/catchAsyncErrors.js";
 import cloudinary from "cloudinary";
