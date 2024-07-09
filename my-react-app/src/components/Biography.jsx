@@ -6,12 +6,19 @@ const Biography = ({imageUrl}) => {
   return (
     <div className='container biography'>
         <div className='banner'>
-         <img src={imageUrl} alt="aboutImg"/>
+         <img height={"400px"} src={imageUrl} alt="aboutImg"/>
         </div>
         <div className="banner">
             <p>Biograohy</p>
             <p>
-                I am Anish Behere Student of government college of Engineering Nagpur the Creater of this application the main pur
+            Hi there! I am Anish behere currently pursuing 
+            my B.Tech from government college of engineering, 
+            Nagpur in electronics and telecommunication. 
+             I have a passion for Web development and I am a dedicated
+              MERN stack developer with a deep -rooted passion to create 
+              innovative and user-centric web applications. I have created 
+              MEdbuddy to transform the Primitive Hospital management system.
+              and replace it with a smart Application Medbuddy.
 
             </p>
         </div>

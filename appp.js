@@ -1,6 +1,6 @@
 import express, { urlencoded } from "express";
 import moragan from "morgan";
-import {config} from "dotenv";
+import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
@@ -33,7 +33,7 @@ app.use(
 //CONNECT FRONTEND WITH BACKEND
 app.use(
     cors({
-      origin: ["http://localhost:5173","http://localhost:5174"], 
+      origin: [process.env.FRONTEND_URL,process.env.DASHBOARD_URL], 
       method: "GET,POST,DELETE,PUT",
       credentials: true, 
 

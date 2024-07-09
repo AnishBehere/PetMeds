@@ -6,8 +6,8 @@ const Appointment = () => {
   return (
     <>
       <Hero
-        title={"mai hu ghatotkach"}
-        imageUrl={""}
+        title={"Book Your Appointment"}
+        imageUrl={"../../Public/heart.jpg"}
       />
       <AppointmentForm/>
     </>

@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import colors from "colors";
-
+import { config } from "dotenv";
 
 const connectDB = async (m) => {
   try {
@@ -13,3 +13,4 @@ const connectDB = async (m) => {
 };
 
 export default connectDB;
+//git add . && git commit -m '<|commit message placeholder|>'

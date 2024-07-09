@@ -52,18 +52,21 @@ export const login = catchAsyncError(async (req, res, next) => {
       new ErrorHandler("Password & Confirm Password Do Not Match!", 400)
     );
   }
+ 
   const user = await User.findOne({ email }).select("+password");
   if (!user) {
-    return next(new ErrorHandler("Invalid Email!", 400));
-  } else {
-    if (user.password !== password) {
-      return next(new ErrorHandler("Invalid Password!", 400));
-    }
+    return next(new ErrorHandler("Invalid Email Or Password!", 400));
+  }
+
+  const isPasswordMatch = await user.comparePassword(password);
+  if (!isPasswordMatch) {
+    return next(new ErrorHandler("Invalid Email Or Password!", 400));
+  }
     if (role !== user.role) {
       return next(new ErrorHandler(`User Not Found With This Role!`, 400));
     }
     generateToken(user, "Login Successfully!", 200, res);
-  }
+  
 });
 
 export const addNewAdmin = catchAsyncError(async (req, res, next) => {
@@ -204,6 +207,8 @@ export const logoutAdmin = catchAsyncError(async (req, res, next) => {
     .cookie("adminToken", "", {
       httpOnly: true,
       expires: new Date(Date.now()),
+      secure: true,
+      sameSite:"None",
     })
     .json({
       success: true,
@@ -222,5 +227,7 @@ export const logoutPatient = catchAsyncError(async (req, res, next) => {
     .json({
       success: true,
       message: "Patient Logged Out Successfully.",
+      secure: true,
+      sameSite:"None",
     });
 });

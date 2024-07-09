@@ -12,39 +12,39 @@ import "react-multi-carousel/lib/styles.css";
         const departmentsArray = [
           {
             name: "Pediatrics",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/pedia.jpg",
           },
           {
             name: "Orthopedics",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/ortho.jpg",
           },
           {
             name: "Cardiology",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/heart.jpg",
           },
           {
             name: "Neurology",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/neuro.jpg",
           },
           {
             name: "Oncology",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/onco.jpg",
           },
           {
             name: "Radiology",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/radio.jpeg",
           },
           {
             name: "Physical Therapy",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/therapy.jpg",
           },
           {
             name: "Dermatology",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/derma.jpg",
           },
           {
             name: "ENT",
-            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s",
+            imageUrl: "../../Public/ent.jpg",
           },
         ];
 

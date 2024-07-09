@@ -7,7 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #3939d9f2;
+  background: #32012f;
 }
 .container {
   padding: 0 100px;
@@ -19,7 +19,7 @@ body {
 }
 .page {
   margin-left: 120px;
-  background: #e5e5e5;
+  background: #F6F5F5;
   padding: 40px;
   height: 100vh;
   border-top-left-radius: 50px;
@@ -50,7 +50,7 @@ body {
   padding-top: 40px;
   padding-bottom: 60px;
   min-height: 100vh;
-  background: #e5e5e5;
+  background: #F6F5F5;
 
   display: flex;
   justify-content: center;
@@ -85,7 +85,7 @@ body {
 .form-component p:first-child {
   font-size: 28px;
   font-weight: 700;
-  color: #370080a3;
+  color: #800066a3;
   margin-top: 30px;
 }
 .form-component form div {
@@ -110,7 +110,7 @@ body {
   border-radius: 8px;
   font-size: 24px;
   margin-bottom: 30px;
-  background: linear-gradient(140deg, #9083d5, #271776ca);
+  background: linear-gradient(140deg, #9083d5,red);
 }
 .form-component .wrapper {
   display: flex;
@@ -362,7 +362,7 @@ body {
   background: #fff;
   color: #320d45ec;
   border-radius: 8px;
-  transition: 0.3s;
+  transition: 0.4s;
   cursor: pointer;
 }
 .sidebar .links {
@@ -554,7 +554,7 @@ body {
   border-radius: 8px;
   font-size: 24px;
   margin-bottom: 30px;
-  background: linear-gradient(140deg, #9083d5, #271776ca);
+  background: linear-gradient(140deg, #9083d5, red);
 }
 @media (max-width: 945px) {
   .add-doctor-form form .first-wrapper {

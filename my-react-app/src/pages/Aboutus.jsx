@@ -7,10 +7,10 @@ const AboutUs = () => {
   return (
     <>
       <Hero
-        title={" i am disco dancer zindagi mera ganaa mai usi ka diwanaaa"}
-        imageUrl={""}
+        title={"What is Medbuddy?"}
+        imageUrl={"../../Public/radio.webp"}
       />
-      <Biography imageUrl={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDlp1QMFvaP5RcG-iY4FpZ7l6AH-6MJCQHg&s"} />
+      <Biography imageUrl={"../../Public/puramai.jpeg"} />
     </>
   );
 };

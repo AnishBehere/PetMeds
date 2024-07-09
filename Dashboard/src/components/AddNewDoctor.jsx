@@ -91,7 +91,7 @@ const AddNewDoctor = () => {
   <>
   <section className="page">
     <div className="container form-component add-doctor-form">
-      <img src="" alt="logo" className="logo" />
+      
       <h1 className="form-title">Register a new Doctor</h1>
       <form onSubmit={handleAddNewDoctor}>
           <div className="first-wrapper">
