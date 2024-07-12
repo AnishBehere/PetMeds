@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Context } from "/Users/Anish/Downloads/meddy/main";
+import { Context } from "../main.jsx";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
