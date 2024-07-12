@@ -1,8 +1,8 @@
-import { User } from "../models/userModels.js";
+import { User } from "/Users/Anish/Downloads/meddy/models/userModels.js";
 
-import { generateToken } from "../utils/JwtToken.js";
-import ErrorHandler from "../middlewares/errorMiddleware.js";
-import { catchAsyncError } from "../middlewares/catchAsyncErrors.js";
+import { generateToken } from "/Users/Anish/Downloads/meddy//utils/JwtToken.js";
+import ErrorHandler from "/Users/Anish/Downloads/meddy//middlewares/errorMiddleware.js";
+import { catchAsyncError } from "/Users/Anish/Downloads/meddy//middlewares/catchAsyncErrors.js";
 import cloudinary from "cloudinary";
 
 // ye fuction sirf patient register karega
@@ -52,7 +52,7 @@ export const login = catchAsyncError(async (req, res, next) => {
       new ErrorHandler("Password & Confirm Password Do Not Match!", 400)
     );
   }
- 
+
   const user = await User.findOne({ email }).select("+password");
   if (!user) {
     return next(new ErrorHandler("Invalid Email Or Password!", 400));
@@ -62,11 +62,10 @@ export const login = catchAsyncError(async (req, res, next) => {
   if (!isPasswordMatch) {
     return next(new ErrorHandler("Invalid Email Or Password!", 400));
   }
-    if (role !== user.role) {
-      return next(new ErrorHandler(`User Not Found With This Role!`, 400));
-    }
-    generateToken(user, "Login Successfully!", 200, res);
-  
+  if (role !== user.role) {
+    return next(new ErrorHandler(`User Not Found With This Role!`, 400));
+  }
+  generateToken(user, "Login Successfully!", 200, res);
 });
 
 export const addNewAdmin = catchAsyncError(async (req, res, next) => {
@@ -181,7 +180,6 @@ export const addNewDoctor = catchAsyncError(async (req, res, next) => {
     message: "New Doctor Registered",
     doctor,
   });
-  
 });
 
 export const getAllDoctors = catchAsyncError(async (req, res, next) => {
@@ -208,7 +206,7 @@ export const logoutAdmin = catchAsyncError(async (req, res, next) => {
       httpOnly: true,
       expires: new Date(Date.now()),
       secure: true,
-      sameSite:"None",
+      sameSite: "None",
     })
     .json({
       success: true,
@@ -228,6 +226,6 @@ export const logoutPatient = catchAsyncError(async (req, res, next) => {
       success: true,
       message: "Patient Logged Out Successfully.",
       secure: true,
-      sameSite:"None",
+      sameSite: "None",
     });
 });

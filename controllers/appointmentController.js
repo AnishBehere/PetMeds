@@ -1,7 +1,7 @@
-import { catchAsyncError } from "../middlewares/catchAsyncErrors.js";
-import { Appointment } from "../models/appointmentSchema.js";
-import ErrorHandler from "../middlewares/errorMiddleware.js";
-import { User } from "../models/userModels.js";
+import { catchAsyncError } from "/Users/Anish/Downloads/meddy/middlewares/catchAsyncErrors.js";
+import { Appointment } from "/Users/Anish/Downloads/meddy/models/appointmentSchema.js";
+import ErrorHandler from "/Users/Anish/Downloads/meddy/middlewares/errorMiddleware.js";
+import { User } from "/Users/Anish/Downloads/meddy/models/userModels.js";
 
 export const postAppointment = catchAsyncError(async (req, res, next) => {
   const {
@@ -59,11 +59,11 @@ export const postAppointment = catchAsyncError(async (req, res, next) => {
   const patient = await User.find({
     firstName: req.body.firstName,
     lastName: req.body.lastName,
-    role: "Patient"
+    role: "Patient",
   });
   const patientId = patient[0]._id;
-  console.log(patientId)
-  console.log(doctorId)
+  console.log(patientId);
+  console.log(doctorId);
   const appointment = await Appointment.create({
     firstName,
     lastName,
@@ -101,7 +101,7 @@ export const getAllAppointments = catchAsyncError(async (req, res, next) => {
 export const updateAppointmentStatus = catchAsyncError(
   async (req, res, next) => {
     let { id } = req.params;
-  let appointment = await Appointment.findById(id);
+    let appointment = await Appointment.findById(id);
     if (!appointment) {
       return next(new ErrorHandler("Appointment Not Found!", 404));
     }

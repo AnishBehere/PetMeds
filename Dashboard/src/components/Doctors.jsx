@@ -4,7 +4,7 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { Context } from "../main";
+import { Context } from "/Users/Anish/Downloads/meddy/main";
 import { Navigate } from "react-router-dom";
 
 const Doctors = () => {

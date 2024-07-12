@@ -9,7 +9,7 @@ import { MdAddModerator } from "react-icons/md";
 import { IoPersonAddSharp } from "react-icons/io5";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Context } from "../main.jsx";
+import { Context } from "/Users/Anish/Downloads/meddy/main.jsx";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
