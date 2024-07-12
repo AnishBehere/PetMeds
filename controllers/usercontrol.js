@@ -1,8 +1,8 @@
 import { User } from "/Users/Anish/Downloads/meddy/models/userModels.js";
 
-import { generateToken } from "/Users/Anish/Downloads/meddy//utils/JwtToken.js";
-import ErrorHandler from "/Users/Anish/Downloads/meddy//middlewares/errorMiddleware.js";
-import { catchAsyncError } from "/Users/Anish/Downloads/meddy//middlewares/catchAsyncErrors.js";
+import { generateToken } from "../utils/jwtToken.js";
+import ErrorHandler from "../middlewares/errorMiddleware.js";
+import { catchAsyncError } from "../middlewares/catchAsyncErrors.js";
 import cloudinary from "cloudinary";
 
 // ye fuction sirf patient register karega

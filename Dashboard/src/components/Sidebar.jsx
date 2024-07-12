@@ -9,7 +9,7 @@ import { MdAddModerator } from "react-icons/md";
 import { IoPersonAddSharp } from "react-icons/io5";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Context } from "../main.jsx";
+import {Context} from "../main.jsx";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
@@ -19,7 +19,7 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("https://meddy-1-26cd.onrender.com/api/v1/user/admin/logout", {
+      .get("http://localhost:3000/api/v1/user/admin/logout", {
         withCredentials: true,
       })
       .then((res) => {

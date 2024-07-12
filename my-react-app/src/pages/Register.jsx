@@ -25,7 +25,7 @@ const Register = () => {
     try {
       await axios
         .post(
-          "https://meddy-1-26cd.onrender.com/api/v1/user/patient/register",
+          "http://localhost:3000/api/v1/user/patient/register",
           { firstName, lastName, email, phone, nic, dob, gender, password },
           {
             withCredentials: true,
@@ -49,7 +49,7 @@ const Register = () => {
       toast.error(error.response.data.message);
     }
   };
-  //yaha user navigate hoga home page par
+//yaha user navigate hoga home page par
   if (isAuthenticated) {
     return <Navigate to={"/"} />;
   }
@@ -59,7 +59,8 @@ const Register = () => {
       <div className="container form-component register-form">
         <h2>Sign Up</h2>
         <p>Sign Up To Continue</p>
-        <p></p>
+        <p>
+        </p>
         <form onSubmit={handleRegistration}>
           <div>
             <input

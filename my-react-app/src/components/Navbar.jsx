@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("https://meddy-1-26cd.onrender.com/api/v1/user/patient/logout", {
+      .get("http://localhost:3000/api/v1/user/patient/logout", {
         withCredentials: true,
       })
       .then((res) => {
@@ -36,7 +36,9 @@ const Navbar = () => {
   return (
     <>
       <nav className={"container"}>
-        <div className="logo"></div>
+        <div className="logo">
+        
+        </div>
         <div className={show ? "navLinks showmenu" : "navLinks"}>
           <div className="links">
             <Link to={"/"} onClick={() => setShow(!show)}>
@@ -50,7 +52,8 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {isAuthenticated ? ( // agar use authenticate raha to logout button show hoga
+          
+          {isAuthenticated ? (// agar use authenticate raha to logout button show hoga
             <button className="logoutBtn btn" onClick={handleLogout}>
               LOGOUT
             </button>

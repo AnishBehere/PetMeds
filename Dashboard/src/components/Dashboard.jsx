@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 
 import React, { useContext, useEffect, useState } from "react";
@@ -15,7 +16,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "https://meddy-1-26cd.onrender.com/api/v1/appointment/getall",
+          "http://localhost:3000/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -29,7 +30,7 @@ const Dashboard = () => {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       let { data } = await axios.put(
-        `https://meddy-1-26cd.onrender.com/api/v1/appointment/update/${appointmentId}`,
+        `http://localhost:3000/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );
@@ -56,10 +57,14 @@ const Dashboard = () => {
       <section className="dashboard page">
         <div className="banner">
           <div className="firstBox">
+          
             <div className="content">
               <div>
                 <p>Hello ,</p>
-                <h5>{admin && `${admin.firstName} ${admin.lastName}`} </h5>
+                <h5>
+                  {admin &&
+                    `${admin.firstName} ${admin.lastName}`}{" "}
+                </h5>
               </div>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -123,13 +128,7 @@ const Dashboard = () => {
                           </option>
                         </select>
                       </td>
-                      <td>
-                        {appointment.hasVisited === true ? (
-                          <GoCheckCircleFill className="green" />
-                        ) : (
-                          <AiFillCloseCircle className="red" />
-                        )}
-                      </td>
+                      <td>{appointment.hasVisited === true ? <GoCheckCircleFill className="green"/> : <AiFillCloseCircle className="red"/>}</td>
                     </tr>
                   ))
                 : "No Appointments Found!"}
