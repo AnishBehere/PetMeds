@@ -1,4 +1,4 @@
-import { User } from "/Users/Anish/Downloads/meddy/models/userModels.js";
+import { User } from "../models/userModels.js";
 
 import { generateToken } from "../utils/jwtToken.js";
 import ErrorHandler from "../middlewares/errorMiddleware.js";

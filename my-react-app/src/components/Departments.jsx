@@ -9,48 +9,39 @@ const Departments = () => {
   const departmentsArray = [
     {
       name: "Pediatrics",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/pedia.jpg",
+      imageUrl: "../../Public/pedia.jpg",
     },
     {
       name: "Orthopedics",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/ortho.jpg",
+      imageUrl: "../../Public/ortho.jpg",
     },
     {
       name: "Cardiology",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/heart.jpg",
+      imageUrl: "../../Public/heart.jpg",
     },
     {
       name: "Neurology",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/neuro.jpg",
+      imageUrl: "../../Public/neuro.jpg",
     },
     {
       name: "Oncology",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/onco.jpg",
+      imageUrl: "../../Public/onco.jpg",
     },
     {
       name: "Radiology",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/radio.jpeg",
+      imageUrl: "../../Public/radio.jpeg",
     },
     {
       name: "Physical Therapy",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/therapy.jpg",
+      imageUrl: "../../Public/therapy.jpg",
     },
     {
       name: "Dermatology",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/derma.jpg",
+      imageUrl: "../../Public/derma.jpg",
     },
     {
       name: "ENT",
-      imageUrl:
-        "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/ent.jpg",
+      imageUrl: "../../Public/ent.jpg",
     },
   ];
 

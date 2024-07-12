@@ -2,7 +2,7 @@ import exprerss from "express";
 import {
   isAdminAuthenticate,
   ispatientAuthenticate,
-} from "/Users/Anish/Downloads/meddy/middlewares/auth.js";
+} from "../middlewares/auth.js";
 
 import {
   addNewAdmin,
@@ -13,7 +13,7 @@ import {
   logoutAdmin,
   logoutPatient,
   patientRegister,
-} from "/Users/Anish/Downloads/meddy/controllers/usercontrol.js";
+} from "../controllers/usercontrol.js";
 
 // router object
 const router = exprerss.Router();

@@ -1,8 +1,11 @@
 import express from "express";
-import { sendMessage,getAllMessages } from "/Users/Anish/Downloads/meddy/controllers/messageController.js";
+import {
+  sendMessage,
+  getAllMessages,
+} from "../controllers/messageController.js";
 
 // message sent karna haii to router ka use kiaa
-import {isAdminAuthenticate }from "/Users/Anish/Downloads/meddy/middlewares/auth.js"
+import { isAdminAuthenticate } from "../middlewares/auth.js";
 const router = express.Router();
 
 router.post("/send", sendMessage);

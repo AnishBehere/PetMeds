@@ -1,22 +1,13 @@
 /* eslint-disable no-unused-vars */
 
 import React from "react";
-import Hero from "/Users/Anish/Downloads/meddy/components/Hero";
-import Biography from "/Users/Anish/Downloads/meddy/components/Biography";
+import Hero from "../components/Hero";
+import Biography from "../components/Biography";
 const AboutUs = () => {
   return (
     <>
-      <Hero
-        title={"What is Medbuddy?"}
-        imageUrl={
-          "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/radio.webp"
-        }
-      />
-      <Biography
-        imageUrl={
-          "/Users/Anish/Downloads/meddy//Users/Anish/Downloads/meddy/Public/puramai.jpeg"
-        }
-      />
+      <Hero title={"What is Medbuddy?"} imageUrl={"../../Public/radio.webp"} />
+      <Biography imageUrl={"../../Public/puramai.jpeg"} />
     </>
   );
 };

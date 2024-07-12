@@ -1,4 +1,4 @@
-import { User } from "/Users/Anish/Downloads/meddy/models/userModels.js";
+import { User } from "../models/userModels.js";
 import { catchAsyncError } from "./catchAsyncErrors.js";
 import ErrorHandler from "./errorMiddleware.js";
 import jwt from "jsonwebtoken";
