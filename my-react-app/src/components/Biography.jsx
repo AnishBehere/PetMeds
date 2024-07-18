@@ -9,7 +9,7 @@ const Biography = ({imageUrl}) => {
          <img height={"400px"} src={imageUrl} alt="aboutImg"/>
         </div>
         <div className="banner">
-            <p>Biograohy</p>
+            <h2>Biograohy</h2>
             <p>
             Hi there! I am Anish behere currently pursuing 
             my B.Tech from government college of engineering, 

@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <Hero
         title={"Welcome to MedBuddy"}
-        imageUrl={"../../Public/roboat.jpeg"}
+        imageUrl={"../../Public/iphone.png"}
       />
       <Biography imageUrl={"../../Public/merimainshakal.jpeg"} />
       <Departments />
