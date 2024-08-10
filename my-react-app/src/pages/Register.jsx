@@ -58,7 +58,7 @@ const Register = () => {
     <>
       <div className="container form-component register-form">
         <h2>Sign Up</h2>
-        <p>Sign Up To Continue</p>
+        <p   style={{ marginBottom: 0 ,color:"black"}}    >Sign Up To Continue</p>
         <p>
         </p>
         <form onSubmit={handleRegistration}>
@@ -124,7 +124,7 @@ const Register = () => {
               flexDirection: "row",
             }}
           >
-            <p style={{ marginBottom: 0 }}>Already Registered?</p>
+            <p style={{ marginBottom: 0 , color:"black"}}>Already Registered?</p>
             <Link
               to={"/signin"}
               style={{ textDecoration: "none", color: "#271776ca" }}
@@ -133,7 +133,7 @@ const Register = () => {
             </Link>
           </div>
           <div style={{ justifyContent: "center", alignItems: "center" }}>
-            <button type="submit">Register</button>
+            <button type="submit" >Register</button>
           </div>
         </form>
       </div>

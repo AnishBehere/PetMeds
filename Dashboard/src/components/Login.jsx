@@ -47,8 +47,7 @@ const Login = () => {
   return (
     <>
       <section className="container form-component">
-      
-        <h1 className="form-title">WELCOME TO Medbuddy</h1>
+        <h1 className="form-title">WELCOME TO PetMeds</h1>
         <p>Only Admins Are Allowed To Access!</p>
         <form onSubmit={handleLogin}>
           <input

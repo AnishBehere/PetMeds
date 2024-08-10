@@ -1,4 +1,3 @@
-
 /* eslint-disable no-unused-vars */
 import axios from "axios";
 import React, { useEffect } from "react";
@@ -21,15 +20,22 @@ const AppointmentForm = () => {
   const [hasVisited, setHasVisited] = useState(false);
 
   const departmentsArray = [
-    "Pediatrics",
-    "Orthopedics",
-    "Cardiology",
-    "Neurology",
-    "Oncology",
-    "Radiology",
-    "Physical Therapy",
+    "Anaesthesia and analgesia",
+    "Animal welfare",
+    "Veterinary behaviourist",
+    "Dentistry",
     "Dermatology",
-    "ENT",
+    "Emergency and Critical Care",
+    "Internal Medicine",
+    "Nutrition",
+    "Theriogenologiest",
+    "Pathology",
+    "Poultry",
+    "Veterinary radiologists",
+    "Sports Medicine and Rehabilitation",
+    "Surgery",
+    "Marine Veterinarian",
+    "Horticulturist",
   ];
 
   const [doctors, setDoctors] = useState([]);
@@ -92,7 +98,7 @@ const AppointmentForm = () => {
   return (
     <>
       <div className="container form-component appointment-form">
-        <h2>Appointment</h2>
+        <h2 >Appointment</h2>
         <form onSubmit={handleAppointment}>
           <div>
             <input
@@ -176,7 +182,8 @@ const AppointmentForm = () => {
               disabled={!department}
             >
               <option value="">Select Doctor</option>
-              {doctors.filter((doctor) => doctor.doctorDepartment === department)
+              {doctors
+                .filter((doctor) => doctor.doctorDepartment === department)
                 .map((doctor, index) => (
                   <option
                     value={`${doctor.firstName} ${doctor.lastName}`}

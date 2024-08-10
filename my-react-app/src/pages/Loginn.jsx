@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { Context } from "../main.jsx";
 import { Link, useNavigate, Navigate } from "react-router-dom";
 
+
 const Login = () => {
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
 
@@ -48,7 +49,7 @@ const Login = () => {
     <>
       <div className="container form-component login-form">
         <h2>Sign In</h2>
-        <p>Login To Continue</p>
+        <p style={{color:"black"}}>Login To Continue</p>
         <p>
         </p>
         <form onSubmit={handleLogin}>
@@ -70,7 +71,7 @@ const Login = () => {
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
-          <div
+         <div
             style={{
               gap: "10px",
               justifyContent: "flex-end",
@@ -81,7 +82,7 @@ const Login = () => {
 
 
   
-            <p style={{ marginBottom: 0 }}>Not Registered?</p>
+            <p style={{ marginBottom: 0 ,color:"black"}}>Not Registered?</p>
             
             
          

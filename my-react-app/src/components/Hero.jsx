@@ -12,13 +12,11 @@ function Hero({title, imageUrl} ) {
 
      
          <div className="banner">
-            <h1> {title}</h1>
-           
-            <p style= {{color: "white"}} >
-            Medbuddy is a leading edge technology to provision extensive healthcare services to the users. It will allow the users to attain personalised care for their wellness according to their needs with the help of several skilled doctors. Medbuddy will prioritise the patient needs and strive towards providing ideal healthcare.
-            It is a solution for the traditional and primitive hospital management system it is a mern stack medical medical application that perform multiple functionalities
-          </p>  
-          
+            <h1> {title}🦴</h1>
+          <h3>Meet new 
+            and 
+            interesting Docs nearby.</h3>
+         
          </div>
          <div className='banner'>
             <img height={"400px"} src ={imageUrl} alt="hero"className='animated-image' />

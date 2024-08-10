@@ -6,8 +6,8 @@ import Biography from "../components/Biography";
 const AboutUs = () => {
   return (
     <>
-      <Hero title={"What is Medbuddy?"} imageUrl={"../../Public/radio.webp"} />
-      <Biography imageUrl={"../../Public/puramai.jpeg"} />
+      <Hero title={"What is ?"} imageUrl={"../../Public/iphone.png"} />
+      <Biography imageUrl={"../../Public/adoption.jpeg"} />
     </>
   );
 };

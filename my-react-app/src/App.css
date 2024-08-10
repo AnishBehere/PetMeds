@@ -13,13 +13,7 @@ background-size: 180% 180%;
 animation: gradient-animation 18s ease infinite;
 position: relative;
 
-
 }
-
-
-
-
-
 .btn {
   padding: 7px 20px;
   border-radius: 12px;
@@ -41,12 +35,12 @@ a {
   font-size: 20px;
 }
 h1 {
-  color: #fff;
+
   font-size: 36px;
   font-weight: 900;
 }
 h1 {
-  color: #fff;
+ 
   font-size: 36px;
   font-weight: 900;
 }
@@ -356,8 +350,10 @@ footer .content div:nth-child(3) {
   flex: 2;
 }
 footer .content div h4 {
+  color: #000;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 footer .content div ul {
   display: flex;

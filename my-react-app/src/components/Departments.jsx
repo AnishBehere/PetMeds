@@ -8,40 +8,64 @@ import "react-multi-carousel/lib/styles.css";
 const Departments = () => {
   const departmentsArray = [
     {
-      name: "Pediatrics",
-      imageUrl: "../../Public/pedia.jpg",
+      name: "Anaesthesia and analgesia",
+      imageUrl: "../../Public/Anaesthesia and analgesia.jpeg",
     },
     {
-      name: "Orthopedics",
-      imageUrl: "../../Public/ortho.jpg",
+      name: "Animal welfare",
+      imageUrl: "../../Public/animal welfare.jpeg",
     },
     {
-      name: "Cardiology",
-      imageUrl: "../../Public/heart.jpg",
+      name: "Veterinary behaviourist",
+      imageUrl: "../../Public/behaviorist.jpeg",
     },
     {
-      name: "Neurology",
-      imageUrl: "../../Public/neuro.jpg",
+      name: "Horticulturist",
+      imageUrl: "../../Public/garden wali.jpeg",
     },
     {
-      name: "Oncology",
-      imageUrl: "../../Public/onco.jpg",
+      name: "Emergency and Critical Care",
+      imageUrl: "../../Public/emergency and critical.jpeg",
     },
     {
-      name: "Radiology",
-      imageUrl: "../../Public/radio.jpeg",
+      name: "Internal Medicine",
+      imageUrl: "../../Public/internal medicine.jpeg",
     },
     {
-      name: "Physical Therapy",
-      imageUrl: "../../Public/therapy.jpg",
+      name: "Nutrition",
+      imageUrl: "../../Public/nutrition.jpeg",
     },
     {
-      name: "Dermatology",
-      imageUrl: "../../Public/derma.jpg",
+      name: "Theriogenologiest",
+      imageUrl: "../../Public/terigonologist.jpeg",
     },
     {
-      name: "ENT",
-      imageUrl: "../../Public/ent.jpg",
+      name: "Pathology",
+      imageUrl: "../../Public/pathology.jpeg",
+    },
+    {
+      name: "Marine Veterinarian",
+      imageUrl: "../../Public/marine.jpeg",
+    },
+    {
+      name: "Sports Medicine and Rehabilitation",
+      imageUrl: "../../Public/sports.jpeg",
+    },
+    {
+      name: "Surgery",
+      imageUrl: "../../Public/surgery.jpeg",
+    },
+    {
+      name: "Poultry",
+      imageUrl: "../../Public/murgi.jpeg",
+    },
+    {
+      name: "Dentistry",
+      imageUrl: "../../Public/dentist.jpeg",
+    },
+    {
+      name: "Veterinary radiologists",
+      imageUrl: "../../Public/radioo.jpeg",
     },
   ];
 

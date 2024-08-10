@@ -10,10 +10,10 @@ const Home = () => {
   return (
     <>
       <Hero
-        title={"Welcome to MedBuddy"}
+        title={"Welcome to PetMeds"}
         imageUrl={"../../Public/iphone.png"}
       />
-      <Biography imageUrl={"../../Public/merimainshakal.jpeg"} />
+      <Biography imageUrl={"../../Public/kuttaahaitu.jpeg"} />
       <Departments />
       <MessageForm />
     </>

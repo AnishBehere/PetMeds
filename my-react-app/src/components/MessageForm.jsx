@@ -37,7 +37,7 @@ const handlemessage = async (e) =>{
   return (
     <>
     <div className="container form-component message-form">
-      <h2>Send Us A Message</h2>
+      <h2>Share your Experience</h2>
       <form onSubmit={handlemessage}>
         <div>
           <input
